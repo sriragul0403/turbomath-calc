@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill=' none'%3e%3crect width=' 1440' height=' 560' x=' 0' y=' 0' fill=' %230e2a47'%3e%3c/rect%3e%3cpath d=' M992.497%2c412.259C1008.011%2c412.195%2c1018.949%2c399.03%2c1026.826%2c385.664C1034.869%2c372.018%2c1040.847%2c356.17%2c1033.96%2c341.906C1026.245%2c325.928%2c1010.234%2c314.087%2c992.497%2c314.567C975.39%2c315.03%2c962.247%2c328.667%2c954.744%2c344.048C948.165%2c357.535%2c950.409%2c372.819%2c957.676%2c385.948C965.226%2c399.59%2c976.905%2c412.323%2c992.497%2c412.259' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float2'%3e%3c/path%3e%3cpath d=' M45.180936528709246 342.09668462586654L5.564830104216053 479.75917888227224 127.57791334828258 451.5902390600618z' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float2'%3e%3c/path%3e%3cpath d=' M122.31541575705609 27.391255142166226L116.26230822121597-30.20021603441768 32.90165522426018 7.6751808576344445z' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float1'%3e%3c/path%3e%3cpath d=' M1030.322%2c549.102C1053.445%2c551.181%2c1079.413%2c544.409%2c1090.198%2c523.85C1100.547%2c504.123%2c1087.945%2c481.658%2c1075.339%2c463.291C1064.76%2c447.876%2c1049.016%2c436.856%2c1030.322%2c436.608C1011.184%2c436.354%2c992.553%2c445.375%2c983.185%2c462.066C973.991%2c478.446%2c977.639%2c498.016%2c986.585%2c514.533C996.07%2c532.046%2c1010.485%2c547.318%2c1030.322%2c549.102' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float2'%3e%3c/path%3e%3cpath d=' M507.1445813775784 405.64118443420034L418.49715466345907 532.2428301987876 545.0988004280463 620.8902569129069 633.7462271421656 494.28861114831966z' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float1'%3e%3c/path%3e%3cpath d=' M891.4833391842396 233.0672843613375L1072.114762713107 207.85671563836053 976.1669313417847 80.52964287133904z' fill=' rgba(28%2c 83%2c 142%2c 0.4)' class=' triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id=' SvgjsMask1000'%3e%3crect width=' 1440' height=' 560' fill=' white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+
+    }
+
+    .whole {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        /* margin: 100px auto; */
+        flex-direction: column;
+        height: 100vh;
+
+    }
+
+    .heading {
+
+        text-shadow: 2px 10px 10px black;
+        font-size: 50px;
+        color: rgb(187, 118, 255);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        opacity: 0.6;
+    }
+
+    .area {
+        opacity: 0.3;
+        border: blue;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px gray;
+        color: antiquewhite;
+        height: 300px;
+        width: 500px;
+        background-color: transparent;
+    }
+
+    .button {
+        font-size: 20px;
+        padding: 10px;
+        border: none;
+        width: 100px;
+        border-radius: 10px;
+        background-color: rgb(202, 0, 0);
+        /* background-color: transparent; */
+        border: 0;
+
+    }
+
+    a {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+    }
+</style>
+
+<body>
+    <div class="whole">
+        <h1 class="heading">
+            <pre>t e x t  to  s p e a c h</pre>
+        </h1>
+        <textarea class="area">hey you</textarea>
+        <button class="button" onclick="speech()">text <br><a>TO</a><br>speak</button>
+    </div>
+
+    <script>
+        let areatext = document.getElementsByClassName("area");
+        // let button = document.getElementsByClassName("button");
+        let speak = new SpeechSynthesisUtterance();
+
+        function speech() {
+            speak.text = areatext[0].value;
+            speak.rate = 1;
+            speak.pitch = 1;
+            speak.volume = 5;
+
+            window.SpeechSynthesis.speech(speak);
+
+
+        }
+
+
+    </script>
+</body>
+
+</html>

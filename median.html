@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Median</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+            background-image: url("img/cool-background\ \(4\).png");
+        }
+
+        main {
+            padding-top: 50px;
+            /* padding-bottom: 50px; */
+            margin: 130px auto;
+            height: 200px;
+            width: 400px;
+            text-align: center;
+            /
+        }
+
+        .diff {
+            margin: 50px;
+        }
+
+        .diff-text {
+            height: 20px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            box-shadow: 5px 5px 5px;
+            letter-spacing: 2px;
+            font-size: 13px;
+            opacity: 0.6;
+            transition: all 0.5s;
+        }
+
+        .diff-text:hover {
+            opacity: 1;
+        }
+
+        .div1 {
+            margin-top: -150px;
+        }
+
+        .div2 {
+            margin-top: -25px;
+        }
+
+        .diff-textarea {
+            height: 100px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            color: rgb(26, 26, 26);
+            box-shadow: 5px 5px 5px;
+            letter-spacing: 2px;
+            font-size: 20px;
+            padding-top: 30px;
+            opacity: 0.6;
+            transition: all 0.5s;
+        }
+
+        .diff-textarea:hover {
+            opacity: 1;
+        }
+
+        .whole {
+            text-align: center;
+        }
+
+        .h1 {
+            font-size: 50px;
+        }
+
+        .h2 {
+            font-size: 13px;
+            margin-left: 300px;
+            margin-top: -50px;
+            color: rgb(243, 24, 24);
+        }
+
+        .button {
+            margin-top: 20px;
+            height: 18px;
+            width: 50px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            background-color: white;
+            color: rgb(34, 34, 34);
+            box-shadow: 5px 5px 5px;
+            letter-spacing: 2px;
+            font-size: 10px;
+            opacity: 0.6;
+            transition: all 0.5s;
+        }
+
+        .button:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="whole">
+        <div class="heading">
+            <h1 class="h1">MEDIAN part</h1>
+            <!-- <label class="h2">by using "sympy"</label> -->
+        </div>
+        <main>
+            <div class="diff div1">
+                <input type="text" class="diff-text" placeholder="enter the three values separated by space">
+                <button class="button">submit</button>
+            </div>
+            <div class="diff div2">
+                <textarea name="diff-textarea" class="diff-textarea" value="output"></textarea>
+            </div>
+        </main>
+    </div>
+    <script>
+        let question = document.querySelector(".diff-text");
+        let answer = document.querySelector(".diff-textarea");
+        let submit = document.querySelector(".button")
+        submit.addEventListener("click", () => {
+            answer.value="";
+            const numbers = question.value
+                .split(" ")
+                .map(Number)
+                .sort((a, b) => a - b);
+
+            const middleIndex = Math.floor(numbers.length / 2);
+
+            if (numbers.length % 2 === 0) {
+                const median =
+                    (numbers[middleIndex - 1] + numbers[middleIndex]) / 2;
+                answer.value=`Median: ${Math.floor(median)}`;
+            } else {
+                answer.value=`Median is: ${Math.floor(numbers[middleIndex])}`;
+
+            }
+            
+        })
+    </script>
+</body>
+
+</html>
